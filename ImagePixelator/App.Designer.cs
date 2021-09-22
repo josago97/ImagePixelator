@@ -29,54 +29,55 @@ namespace ImagePixelator
         /// </summary>
         private void InitializeComponent()
         {
-            this.imagePictureBox = new System.Windows.Forms.PictureBox();
-            this.examineButton = new System.Windows.Forms.Button();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(App));
+            this.ImagePictureBox = new System.Windows.Forms.PictureBox();
+            this.ExamineButton = new System.Windows.Forms.Button();
+            this.PixelRatioSlider = new System.Windows.Forms.TrackBar();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PixelRatioSlider)).BeginInit();
             this.SuspendLayout();
             // 
-            // imagePictureBox
+            // ImagePictureBox
             // 
-            this.imagePictureBox.Location = new System.Drawing.Point(140, 143);
-            this.imagePictureBox.Name = "imagePictureBox";
-            this.imagePictureBox.Size = new System.Drawing.Size(496, 295);
-            this.imagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imagePictureBox.TabIndex = 0;
-            this.imagePictureBox.TabStop = false;
+            this.ImagePictureBox.Location = new System.Drawing.Point(40, 130);
+            this.ImagePictureBox.Name = "ImagePictureBox";
+            this.ImagePictureBox.Size = new System.Drawing.Size(500, 300);
+            this.ImagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImagePictureBox.TabIndex = 0;
+            this.ImagePictureBox.TabStop = false;
             // 
-            // examineButton
+            // ExamineButton
             // 
-            this.examineButton.Location = new System.Drawing.Point(484, 26);
-            this.examineButton.Name = "examineButton";
-            this.examineButton.Size = new System.Drawing.Size(75, 23);
-            this.examineButton.TabIndex = 1;
-            this.examineButton.Text = "Examinar";
-            this.examineButton.UseVisualStyleBackColor = true;
-            this.examineButton.Click += new System.EventHandler(this.OnExamineButtonClick);
+            this.ExamineButton.Location = new System.Drawing.Point(465, 32);
+            this.ExamineButton.Name = "ExamineButton";
+            this.ExamineButton.Size = new System.Drawing.Size(75, 23);
+            this.ExamineButton.TabIndex = 1;
+            this.ExamineButton.Text = "Examinar";
+            this.ExamineButton.UseVisualStyleBackColor = true;
             // 
-            // trackBar1
+            // PixelRatioSlider
             // 
-            this.trackBar1.Location = new System.Drawing.Point(181, 80);
-            this.trackBar1.Maximum = 100;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(402, 45);
-            this.trackBar1.TabIndex = 2;
+            this.PixelRatioSlider.Location = new System.Drawing.Point(40, 79);
+            this.PixelRatioSlider.Maximum = 100;
+            this.PixelRatioSlider.Name = "PixelRatioSlider";
+            this.PixelRatioSlider.Size = new System.Drawing.Size(500, 45);
+            this.PixelRatioSlider.TabIndex = 2;
             // 
             // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.trackBar1);
-            this.Controls.Add(this.examineButton);
-            this.Controls.Add(this.imagePictureBox);
+            this.ClientSize = new System.Drawing.Size(584, 511);
+            this.Controls.Add(this.PixelRatioSlider);
+            this.Controls.Add(this.ExamineButton);
+            this.Controls.Add(this.ImagePictureBox);
             this.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "App";
             this.Text = "Pixelador de imágenes";
-            ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PixelRatioSlider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,9 +85,9 @@ namespace ImagePixelator
 
         #endregion
 
-        private System.Windows.Forms.PictureBox imagePictureBox;
-        private System.Windows.Forms.Button examineButton;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Button ExamineButton;
+        private System.Windows.Forms.PictureBox ImagePictureBox;
+        private System.Windows.Forms.TrackBar PixelRatioSlider;
     }
 }
 

@@ -10,4 +10,10 @@
     <PackageReference Include="Sharplus" Version="1.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Update="App.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>
