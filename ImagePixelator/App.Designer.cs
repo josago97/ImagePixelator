@@ -46,6 +46,8 @@ namespace ImagePixelator
             this.ImagePictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImagePictureBox.Image = global::ImagePixelator.Properties.Resources.dragdropimageicon;
+            this.ImagePictureBox.InitialImage = null;
             this.ImagePictureBox.Location = new System.Drawing.Point(40, 109);
             this.ImagePictureBox.Name = "ImagePictureBox";
             this.ImagePictureBox.Size = new System.Drawing.Size(500, 300);
