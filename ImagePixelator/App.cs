@@ -17,13 +17,13 @@ namespace ImagePixelator
         {
             InitializeComponent();
 
-            /*PixelRatioSlider.Enabled = false;
+            PixelRatioSlider.Enabled = false;
             SaveButton.Enabled = false;
             ImagePictureBox.AllowDrop = true;
 
-            SetPixelRatio(0);*/
+            SetPixelRatio(0);
         }
-        /*
+        
         private void SetPixelRatio(int value)
         {
             PixelRatioSlider.Value = value;
@@ -114,6 +114,6 @@ namespace ImagePixelator
         private void ImagePictureBox_DragEnter(object sender, DragEventArgs e)
         {
             e.Effect = DragDropEffects.Copy;
-        }*/
+        }
     }
 }
